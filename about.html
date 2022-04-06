@@ -34,13 +34,11 @@
                 <style> .content p { font-size: 12pt !important; } .content b { font-family: 'Ubuntu', sans-serif; color: rgb(160, 160, 160); }</style>
                 <div class="row mb-2 ml-4 mr-4">
                     <h2>About Me</h2>
-                    <p>My name is Lucas Maza, I'm a 19 years old freelance programmer and engineering student from Argentina. I love working on <a href="https://www.sourcemod.net/" target="_blank">SourceMod</a> plugins, specifically <a href="https://www.teamfortress.com/" target="_blank">Team Fortress 2</a> ones, and developing lots of back-end services even though I aspire to become a Full-Stack dev one day.</p>
-                    <p>I like playing videogames on spare time, learn new programming technologies and workflow techniques. I try to learn as fast as possible whenever a new framework or API shows up at my workspace, and I kinda get the hang of it in a little while! (at least the basics :P)</p>
-                    <p>My main programming languages are <b>JavaScript</b>, <b>PHP</b>, <b>SourcePawn</b> and a bit of <b>Python</b>. I'm planning on learning <b>C#</b>, <b>TypeScript</b> and probably <b>Go</b>.</p>
-                    <p>I'm very familiar with the runtime environment <b>NodeJS</b>, and frameworks such as <b>ExpressJS</b> and (learning) <b>Electron</b>. One unfinished project I was working on is called <b>CustomTF</b>, a <b>TF2 Virtual Inventory</b> that is separate from the In-Game one. Players would be able to equip weapons, cosmetics, craft, uncrate and everything else that could be done on the real thing. It is scrapped for now.</p>
-                    <p>I have intermediate experience working with <b>MySQL</b> databases and basic knowledge of <b>NoSQL</b> ones. I've utilized <b>MariaDB</b> and <b>MongoDB</b> so far.</p>
-                    <p>I have plans on collaborating in Open Source projects once I feel like my experience is high enough for it. I'm still learning!</p>
-                    <p>And that's about it! Thank you for reading!</p>
+                    <p>My name is Lucas Maza, I'm a <span class="age" style="color: rgb(151, 151, 151);"></span> years old freelance programmer and engineering student from Argentina. I've worked on <a href="https://www.sourcemod.net/" target="_blank">SourceMod</a> plugins, specifically <a href="https://www.teamfortress.com/" target="_blank">Team Fortress 2</a> ones and have developed back-end services.</p>
+                    <p>I like playing videogames on spare time, learn new programming technologies and workflow techniques. I try to learn as fast as possible whenever a new framework or API shows up at my workspace and I kinda get the hang of it in a little while.</p>
+                    <p>My main programming languages are <b>JavaScript</b>, <b>PHP</b>, <b>SourcePawn</b>, <b>TypeScript</b> and a bit of <b>Python</b>. I'm also learning <b>DevOps</b> as I go.</p>
+                    <p>I'm very familiar with the runtime environment <b>NodeJS</b>, and frameworks such as <b>ExpressJS</b> and <b>NestJS</b>.</p>
+                    <p>I have intermediate experience working with <b>MySQL</b> databases and knowledge of <b>MongoDB</b>.</p>
                 </div>
             </div>
 
@@ -79,6 +77,13 @@
                     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                         return new bootstrap.Tooltip(tooltipTriggerEl)
                     })
+
+                    // My age calculation
+                    let date = new Date();
+
+                    let age = date.getFullYear() - 2001;
+                    let ageDOM = document.getElementsByClassName('age');
+                    ageDOM[0].innerHTML = `${age}`;
                 </script>
             </div>
         </div>
